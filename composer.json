@@ -1,0 +1,43 @@
+{
+    "name": "tinydots/craft-front-matter",
+    "description": "Extract YAML data from twig templates",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "yaml",
+        "front matter"
+    ],
+    "support": {
+        "docs": "https://github.com/tinydots/craft-front-matter",
+        "issues": "https://github.com/tinydots/craft-front-matter/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Pepper",
+            "email": "mdcpepper@gmail.com",
+            "homepage": "https://github.com/mdcpepper"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "mnapoli/front-yaml": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "tinydots\\frontmatter\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Front Matter",
+        "handle": "front-matter",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://github.com/tinydots/craft-front-matter/CHANGELOG.md",
+        "class": "tinydots\\frontmatter\\FrontMatter"
+    }
+}
