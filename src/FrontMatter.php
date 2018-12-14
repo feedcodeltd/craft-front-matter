@@ -22,11 +22,14 @@ use yii\base\Event;
  */
 class FrontMatter extends Plugin
 {
+    /** @var FrontMatter */
+    public static $plugin;
+
     public function init()
     {
         parent::init();
 
-        self::setInstance($this);
+        self::$plugin = $this;
 
         $this->setComponents([
             'frontMatter' => FrontMatterService::class,

@@ -18,11 +18,11 @@ class FrontMatterVariable
 {
     public function parse($template, $markdown = false)
     {
-        return FrontMatter::getInstance()->frontMatter->parse($template, $markdown);
+        return FrontMatter::$plugin->frontMatter->parse($template, $markdown);
     }
 
     public function source($template)
     {
-        return FrontMatter::getInstance()->frontMatter->source($template);
+        return FrontMatter::$plugin->frontMatter->source($template);
     }
 }

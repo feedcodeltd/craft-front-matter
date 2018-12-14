@@ -31,20 +31,21 @@ class FrontMatterService extends Component
         $this->_parser = new Parser(null, null, '{#---', '---#}');
     }
 
-    public function parse($template, $markdown = true)
+    public function parse($template, $markdown = true): array
     {
         $yaml = $this->getParsed($template, $markdown)->getYAML();
 
         return $yaml ?: [];
     }
 
-    public function source($template, array $variables = [])
+    public function source($template): string
     {
         return $this->getParsed($template, false)->getContent();
     }
 
 
-    public function getParsed($template, $markdown = false) {
+    public function getParsed($template, $markdown = false): string
+    {
         $key = md5($template . (string) $markdown);
 
         if (!isset($this->_cache[$key])) {
@@ -55,10 +56,10 @@ class FrontMatterService extends Component
         return $this->_cache[$key];
     }
 
-    private function _getTemplateContents($template)
+    private function _getTemplateContents($template): string
     {
         $path = Craft::$app->getView()->resolveTemplate($template);
 
-        return $path ? file_get_contents($path) : false;
+        return $path ? file_get_contents($path) : '';
     }
 }
