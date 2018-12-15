@@ -2,7 +2,7 @@
     "name": "tinydots/craft-front-matter",
     "description": "Extract YAML data from twig templates",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "keywords": [
         "craft",
         "cms",
@@ -38,6 +38,8 @@
     "extra": {
         "name": "Front Matter",
         "handle": "front-matter",
+        "developer": "Tiny Dots",
+        "developerUrl": "https://www.github.com/tinydots",
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://github.com/tinydots/craft-front-matter/CHANGELOG.md",
