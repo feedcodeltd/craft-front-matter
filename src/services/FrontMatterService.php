@@ -22,6 +22,7 @@ class FrontMatterService extends Component
     /** @var Parser the front matter parser instance */
     protected $_parser;
 
+    /** @var array a cache of already-parsed templates */
     protected $_cache;
 
     public function init()
@@ -31,6 +32,13 @@ class FrontMatterService extends Component
         $this->_parser = new Parser(null, null, '{#---', '---#}');
     }
 
+    /**
+     * Parse a template
+     *
+     * @param $template
+     * @param bool $markdown
+     * @return array
+     */
     public function parse($template, $markdown = true): array
     {
         $yaml = $this->getParsed($template, $markdown)->getYAML();

@@ -24,8 +24,11 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1",
+        "craftcms/cms": "^3.0.0",
         "mnapoli/front-yaml": "^1.6"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.4.x-dev"
     },
     "autoload": {
         "psr-4": {

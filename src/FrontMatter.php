@@ -35,7 +35,7 @@ class FrontMatter extends Plugin
             'frontMatter' => FrontMatterService::class,
         ]);
 
-        Event::on(CraftVariable::class, CraftVariable::EVENT_INIT, function (Event $event) {
+        Event::on(CraftVariable::class, CraftVariable::EVENT_INIT, function(Event $event) {
             $variable = $event->sender;
             $variable->set('frontMatter', FrontMatterVariable::class);
         });
