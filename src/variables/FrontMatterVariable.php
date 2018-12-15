@@ -16,12 +16,22 @@ use tinydots\frontmatter\FrontMatter;
  */
 class FrontMatterVariable
 {
+    /**
+     * @param $template
+     * @return mixed
+     * @throws \craft\web\twig\TemplateLoaderException
+     */
     public function parse($template)
     {
         return FrontMatter::$plugin->frontMatter->parseTemplate($template)->getYAML();
     }
 
-    public function source($template)
+    /**
+     * @param $template
+     * @return string
+     * @throws \craft\web\twig\TemplateLoaderException
+     */
+    public function source($template): string
     {
         return FrontMatter::$plugin->frontMatter->parseTemplate($template)->getContent();
     }

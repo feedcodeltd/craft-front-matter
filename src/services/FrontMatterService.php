@@ -26,14 +26,22 @@ class FrontMatterService extends Component
         $this->_parser = new Parser(null, null, '{#---', '---#}');
     }
 
-    public function getParser()
+    /**
+     * @return Parser
+     */
+    public function getParser(): Parser
     {
         return $this->_parser;
     }
 
+    /**
+     * @param string $string
+     * @return Document
+     */
     public function parseString(string $string): Document
     {
         $key = md5($string);
+
         if (!isset($this->_cache[$key])) {
             $this->_cache[$key] = $this->getParser()->parse($string, false);
         }
@@ -55,9 +63,6 @@ class FrontMatterService extends Component
         return $this->parseString($contents);
     }
 
-    // Private Methods
-    // =========================================================================
-
     /**
      * Returns the path to a given template, or throws a TemplateLoaderException.
      *
@@ -65,7 +70,7 @@ class FrontMatterService extends Component
      * @return string
      * @throws TemplateLoaderException if the template doesn’t exist
      */
-    private function _resolveTemplate(string $name)
+    private function _resolveTemplate(string $name): string
     {
         $template = \Craft::$app->getView()->resolveTemplate($name);
 
