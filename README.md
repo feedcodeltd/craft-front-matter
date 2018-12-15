@@ -1,6 +1,6 @@
 # Front Matter for Craft CMS 3.x
 
-[![Build Status](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/badges/build.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/build-status/develop) 
+[![Build Status](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/badges/build.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/build-status/master) 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/?branch=master) 
 [![Code Coverage](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/?branch=master) 
 [![License](https://poser.pugx.org/tinydots/craft-front-matter/license)](https://packagist.org/packages/tinydots/craft-front-matter)
