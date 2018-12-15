@@ -1,0 +1,170 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  'C:\\projects\\tinydots\\plugins\\front-matter\\src\\FrontMatter.php' => 
+  array (
+    30 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testHasAStaticAttributeThatIsAnInstanceOfThePlugin',
+      1 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      2 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+    32 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testHasAStaticAttributeThatIsAnInstanceOfThePlugin',
+      1 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      2 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+    34 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testHasAStaticAttributeThatIsAnInstanceOfThePlugin',
+      1 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      2 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+    35 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testHasAStaticAttributeThatIsAnInstanceOfThePlugin',
+      1 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      2 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+    39 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+    40 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+    41 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testHasAStaticAttributeThatIsAnInstanceOfThePlugin',
+      1 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      2 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+    42 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testHasAStaticAttributeThatIsAnInstanceOfThePlugin',
+      1 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      2 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable',
+    ),
+  ),
+  'C:\\projects\\tinydots\\plugins\\front-matter\\src\\services\\FrontMatterService.php' => 
+  array (
+    24 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      1 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testParserExists',
+    ),
+    26 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      1 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testParserExists',
+    ),
+    27 => 
+    array (
+      0 => 'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent',
+      1 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testParserExists',
+    ),
+    31 => 
+    array (
+      0 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testParserExists',
+      1 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsDataFromString',
+    ),
+    32 => NULL,
+    36 => 
+    array (
+      0 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsDataFromString',
+      1 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsSourceFromString',
+    ),
+    37 => 
+    array (
+      0 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsDataFromString',
+      1 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsSourceFromString',
+    ),
+    38 => 
+    array (
+      0 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsDataFromString',
+    ),
+    41 => 
+    array (
+      0 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsDataFromString',
+      1 => 'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsSourceFromString',
+    ),
+    42 => NULL,
+    51 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    56 => NULL,
+    70 => 
+    array (
+    ),
+    72 => 
+    array (
+    ),
+    73 => 
+    array (
+    ),
+    76 => 
+    array (
+    ),
+    77 => NULL,
+  ),
+  'C:\\projects\\tinydots\\plugins\\front-matter\\src\\variables\\FrontMatterVariable.php' => 
+  array (
+    21 => 
+    array (
+    ),
+    22 => NULL,
+    26 => 
+    array (
+    ),
+    27 => NULL,
+  ),
+));
+$coverage->setTests(array (
+  'tinydots\\frontmatter\\FrontMatterTest::testHasAStaticAttributeThatIsAnInstanceOfThePlugin' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterServiceComponent' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'tinydots\\frontmatter\\FrontMatterTest::testSetsTheFrontMatterVariable' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testParserExists' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsDataFromString' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'tinydots\\frontmatter\\tests\\unit\\services\\FrontMatterServiceTest::testExtractsSourceFromString' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  'C:\\projects\\tinydots\\plugins\\front-matter\\src\\FrontMatter.php' => true,
+  'C:\\projects\\tinydots\\plugins\\front-matter\\src\\services\\FrontMatterService.php' => true,
+  'C:\\projects\\tinydots\\plugins\\front-matter\\src\\variables\\FrontMatterVariable.php' => true,
+));
+
+return $coverage;

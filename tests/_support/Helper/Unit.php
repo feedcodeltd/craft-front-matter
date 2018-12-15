@@ -3,6 +3,7 @@ namespace Helper;
 
 use Codeception\TestCase;
 use Codeception\Module;
+use craft\web\View;
 use tinydots\frontmatter\FrontMatter;
 use Craft;
 use craft\i18n\I18N;
@@ -29,13 +30,8 @@ class Unit extends Module
     private function getMockApp(TestCase $test)
     {
         $mockApp = $this->getMock($test, Application::class);
-//        $mockI18n = $this->getMock($test, I18N::class);
         $mockRequest = $this->getMock($test, Request::class);
-//
-//        $mockApp->expects($test->any())
-//                ->method('getI18n')
-//                ->willReturn($mockI18n);
-//
+
         $mockApp->expects($test->any())
             ->method('getRequest')
             ->willReturn($mockRequest);

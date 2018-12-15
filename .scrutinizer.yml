@@ -11,6 +11,13 @@ build:
             command: phpcs-run
             use_website_config: true
     tests: true
+    coverage:
+      tests:
+        override:
+          - command: ./codecept --coverage --coverage-xml
+            coverage:
+              file: tests/_output/coverage.xml
+              format: clover
 checks:
   php:
     simplify_boolean_return: true

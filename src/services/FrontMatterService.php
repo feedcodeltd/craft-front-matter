@@ -6,23 +6,17 @@
  */
 namespace tinydots\frontmatter\services;
 
-use Mni\FrontYAML\Parser;
-use Craft;
 use craft\base\Component;
-use function file_get_contents;
+use craft\web\twig\TemplateLoaderException;
+use Mni\FrontYAML\Document;
+use Mni\FrontYAML\Parser;
 
-/**
- * Class FrontMatterService
- *
- * @author Mike Pepper <mdcpepper@gmail.com>
- * @since 1.0.0
- */
 class FrontMatterService extends Component
 {
-    /** @var Parser the front matter parser instance */
+    /** @var Parser The FrontYAML parser instance */
     protected $_parser;
 
-    /** @var array a cache of already-parsed templates */
+    /** @var array */
     protected $_cache;
 
     public function init()
@@ -32,42 +26,53 @@ class FrontMatterService extends Component
         $this->_parser = new Parser(null, null, '{#---', '---#}');
     }
 
-    /**
-     * Parse a template
-     *
-     * @param $template
-     * @param bool $markdown
-     * @return array
-     */
-    public function parse($template, $markdown = true): array
+    public function getParser()
     {
-        $yaml = $this->getParsed($template, $markdown)->getYAML();
-
-        return $yaml ?: [];
+        return $this->_parser;
     }
 
-    public function source($template): string
+    public function parseString(string $string): Document
     {
-        return $this->getParsed($template, false)->getContent();
-    }
-
-
-    public function getParsed($template, $markdown = false): string
-    {
-        $key = md5($template . (string) $markdown);
-
+        $key = md5($string);
         if (!isset($this->_cache[$key])) {
-            $contents = $this->_getTemplateContents($template);
-            $this->_cache[$key] = $this->_parser->parse($contents, $markdown);
+            $this->_cache[$key] = $this->getParser()->parse($string, false);
         }
 
         return $this->_cache[$key];
     }
 
-    private function _getTemplateContents($template): string
+    /**
+     * @param $templatePath
+     * @return Document
+     * @throws TemplateLoaderException
+     */
+    public function parseTemplate($templatePath): Document
     {
-        $path = Craft::$app->getView()->resolveTemplate($template);
+        $path = $this->_resolveTemplate($templatePath);
 
-        return $path ? file_get_contents($path) : '';
+        $contents = file_get_contents($path);
+
+        return $this->parseString($contents);
+    }
+
+    // Private Methods
+    // =========================================================================
+
+    /**
+     * Returns the path to a given template, or throws a TemplateLoaderException.
+     *
+     * @param string $name
+     * @return string
+     * @throws TemplateLoaderException if the template doesn’t exist
+     */
+    private function _resolveTemplate(string $name)
+    {
+        $template = \Craft::$app->getView()->resolveTemplate($name);
+
+        if ($template !== false) {
+            return $template;
+        }
+
+        throw new TemplateLoaderException($name, Craft::t('app', 'Unable to find the template “{template}”.', ['template' => $name]));
     }
 }

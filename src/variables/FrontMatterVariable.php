@@ -16,13 +16,13 @@ use tinydots\frontmatter\FrontMatter;
  */
 class FrontMatterVariable
 {
-    public function parse($template, $markdown = false)
+    public function parse($template)
     {
-        return FrontMatter::$plugin->frontMatter->parse($template, $markdown);
+        return FrontMatter::$plugin->frontMatter->parseTemplate($template)->getYAML();
     }
 
     public function source($template)
     {
-        return FrontMatter::$plugin->frontMatter->source($template);
+        return FrontMatter::$plugin->frontMatter->parseTemplate($template)->getContent();
     }
 }
