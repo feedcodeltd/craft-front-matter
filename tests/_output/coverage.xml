@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1544900833">
-  <project timestamp="1544900833">
+<coverage generated="1544901400">
+  <project timestamp="1544901400">
     <package name="tinydots\frontmatter">
       <file name="C:\projects\tinydots\plugins\front-matter\src\FrontMatter.php">
         <class name="tinydots\frontmatter\FrontMatter" namespace="tinydots\frontmatter">

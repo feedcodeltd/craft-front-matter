@@ -14,7 +14,7 @@ build:
     coverage:
       tests:
         override:
-          - command: ./codecept --coverage --coverage-xml
+          - command: ./vendor/bin/codecept run --coverage-xml
             coverage:
               file: tests/_output/coverage.xml
               format: clover
