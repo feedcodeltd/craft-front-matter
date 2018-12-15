@@ -2,6 +2,7 @@
 namespace tinydots\frontmatter\tests\unit;
 
 use Codeception\Test\Unit;
+use tinydots\frontmatter\FrontMatter;
 use tinydots\frontmatter\services\FrontMatterService;
 use tinydots\frontmatter\variables\FrontMatterVariable;
 use craft\web\twig\variables\CraftVariable;
