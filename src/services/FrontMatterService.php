@@ -73,6 +73,6 @@ class FrontMatterService extends Component
             return $template;
         }
 
-        throw new TemplateLoaderException($name, Craft::t('app', 'Unable to find the template “{template}”.', ['template' => $name]));
+        throw new TemplateLoaderException($name, \Craft::t('app', 'Unable to find the template “{template}”.', ['template' => $name]));
     }
 }
