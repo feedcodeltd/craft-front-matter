@@ -3,8 +3,8 @@ namespace tinydots\frontmatter\tests\unit\services;
 
 use Codeception\Test\Unit;
 use Mni\FrontYAML\Parser;
-use tinydots\frontmatter\FrontMatter;
 use tinydots\frontmatter\services\FrontMatterService;
+use tinydots\frontmatter\FrontMatter;
 
 class FrontMatterServiceTest extends Unit
 {

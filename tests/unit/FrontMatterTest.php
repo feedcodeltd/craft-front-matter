@@ -1,10 +1,10 @@
 <?php
-namespace tinydots\frontmatter;
+namespace tinydots\frontmatter\tests\unit;
 
 use Codeception\Test\Unit;
-use craft\web\twig\variables\CraftVariable;
 use tinydots\frontmatter\services\FrontMatterService;
 use tinydots\frontmatter\variables\FrontMatterVariable;
+use craft\web\twig\variables\CraftVariable;
 
 class FrontMatterTest extends Unit
 {
