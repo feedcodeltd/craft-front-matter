@@ -1,12 +1,14 @@
 # Front Matter for Craft CMS 3.x
 
+[![Build Status](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/badges/build.png?b=develop)](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/build-status/develop) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-front-matter/?branch=master)
+
 Front Matter allows you to extract [YAML](http://yaml.org/spec/1.2/spec.html) data from specially-formatted
 comments at the top of your twig templates. This is especially useful
 for including a pattern library inside your Craft CMS project.
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0-beta.23 or later.
+This plugin requires Craft CMS 3.0.0 or later.
 
 ## Installation
 
