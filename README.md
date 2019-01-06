@@ -42,12 +42,12 @@ following YAML front matter data:
 
 ```twig
 {#---
-title: Links
+title: Link
 description: >
-    This is a tiny component for rendering a simple link.
+    This is a tiny component for rendering a single link.
 
         {% include "_components/link" with {
-            url: 'https://www.example.com,
+            url: 'https://www.google.com,
             text: 'Google',
         } %}
 variables:
