@@ -47,7 +47,7 @@ description: >
     This is a tiny component for rendering a single link.
 
         {% include "_components/link" with {
-            url: 'https://www.google.com,
+            url: 'https://www.google.com',
             text: 'Google',
         } %}
 variables:
